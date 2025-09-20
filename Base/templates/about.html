@@ -1,0 +1,202 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{%static 'css/aps.css'%}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>About</title>
+</head>
+
+<body>
+    <nav id="navbar" class="flex s-around bg-color">
+        <div class="left-nav">
+            <h2 class="t-white">Portfolio</h2>
+        </div>
+        <div class="right-nav">
+            <ul class="flex">
+                <li><a href="{%url 'home'%}" class="t-white roboto">Home <i class="fa-solid fa-house"></i></a></li>
+                <li><a href="{% url 'about' %}" class="t-white roboto">About Me <i class="fa-solid fa-user"></i></a>
+                </li>
+                <li><a href="{% url 'skills' %}" class="t-white roboto">Skills <i class="fa-solid fa-code"></i></a></li>
+                <li><a href="{% url 'projects' %}" class="t-white roboto">Projects <i
+                            class="fas fa-project-diagram"></i></a></li>
+                <li><a href="{% url 'home' %}#Contact" class="t-white roboto">Contact <i class="fa-solid fa-rocket"></i></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <section id="About-me">
+        <h1 class="t-center my-2 f-2" style="color:rgb(216, 117, 173);">Meet Nibedita</h1>
+        <p class="about-me">I am Nibedita Mohapatro from Jeypore, Koraput, passionate about web development and creating
+            practical solutions.<br>
+            With a passion for innovation and efficient workflow helps me manage multiple tasks efficiently and adapt to
+            any situation.<br>
+            I balance technical skills with creativity, enjoying origami, spiritual music, and exploring diverse
+            cultures.<br>
+            Past achievements and failures have shaped my resilience, teamwork, and commitment to continuous
+            improvement.<br>
+            I believed in hands-on learning combined with focus and perseverance, is the key to turning ideas into
+            impactful results.</p>
+    </section>
+    <hr style="border: 1px solid rgb(216, 117, 173)">
+    <section id="education">
+        <h1 class="t-center my-2 f-2">Education</h1>
+        <div class="education-container">
+            <div class="edu-item">
+                <h3>10th Standard</h3>
+                <p><strong>School:</strong>Public School Jeypore</p>
+                <p><strong>Year:</strong>2009-2019</p>
+                <p>Built a solid foundation in Mathematics and Science, which fueled my curiosity toward technology and
+                    innovation.</p>
+                <a href="{% static 'pdf/10th.pdf' %}" target="_blank">
+                    <button class="btn poppins">Mark Sheet</button></a>
+            </div>
+
+            <div class="edu-item">
+                <h3>12th Standard</h3>
+                <p><strong>School:</strong>Vidwan H.S School</p>
+                <p><strong>Year:</strong> 2019-2021</p>
+                <p>Pursued higher secondary education in Science (PCMB) where I enhanced my analytical skills and
+                    deepened my interest in computing and problem-solving</p>
+                <a href="{% static 'pdf/12th.pdf' %}" target="_blank">
+                    <button class="btn poppins">Mark Sheet</button></a>
+            </div>
+
+            <div class="edu-item">
+                <h3>B.Tech (Ongoing)</h3>
+                <p><strong>College:</strong> ITER, SOA University</p>
+                <p><strong>Branch:</strong> Computer Science & Engineering</p>
+                <p>Throughout my engineering journey, I’ve gained practical experience through projects, internships,
+                    and shaping myself into an aspiring software engineer ready for industry challenges.</p>
+                <a href="{% static 'pdf/6th.pdf' %}" target="_blank">
+                    <button class="btn poppins">Mark Sheet</button></a>
+            </div>
+        </div>
+    </section>
+    <hr style="border: 1px solid rgb(216, 117, 173);">
+    <section id="training">
+        <h1>Training & Certifications</h1>
+        <div class="training-container">
+            <div class="training-item">
+                <h3>Microsoft Power BI & Project Management</h3>
+                <p>Currently enrolled in training focusing on Microsoft Power BI & Project Management conducted by
+                    <strong>Caterpillar</strong> under <b>The Grads With Goals</b>program.</p>
+                <div class="tags">
+                    <span class="tag">📚 Ongoing</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr style="border: 1px solid rgb(216, 117, 173);">
+    <section id="achievements">
+        <h1 class="t-center my-2 f-2">Achievements & Leadership</h1>
+        <div class="achievements-container">
+            <div class="ach-item">
+                <h3>Vice Head Girl</h3>
+                <p>Held the position of Vice Head Girl for <strong>2 years</strong>, assisting in school leadership and
+                    organizing events.</p>
+            </div>
+            <div class="ach-item">
+                <h3>Head Girl</h3>
+                <p>Served as Head Girl for <strong>2 years</strong>, leading the student council, organizing events,
+                    and representing the school at inter-school activities.</p>
+            </div>
+            <div class="ach-item">
+                <h3>Academic Excellence Award</h3>
+                <p>Awarded by <strong>Samay Newspaper</strong> for being among the <strong>Top 3 Toppers</strong> in my
+                    12th standard,
+                    and recognized with certificates of achievement.</p>
+            </div>
+        </div>
+    </section>
+    <hr style="border: 1px solid rgb(216, 117, 173);">
+    <section id="internship">
+        <h1 class="t-center my-2 f-2">Internship</h1>
+        <div class="internship-container">
+            <div class="intern-item">
+                <h3>HAL Sunabeda – HAL SmartMove Project</h3>
+                <p>During my internship at Hindustan Aeronautics Limited (HAL), I worked on a project for Transport
+                    Management and Vehicle Monitoring Systems, focusing on improving route optimization, vehicle
+                    utilization, and transport requests. I gained hands-on experience in database management, backend
+                    connectivity, and frontend development with React, while understanding how data-driven solutions
+                    enhance efficiency in large organizations. This internship also strengthened my teamwork, project
+                    management, and system-level thinking, giving me a balance of technical expertise and professional
+                    exposure.</p> <a href="{% static 'pdf/certificate.pdf' %}" target="_blank">
+                    <button class="btn poppins">View Certificate</button>
+                </a>
+            </div>
+
+        </div>
+    </section>
+    <hr style="border: 1px solid rgb(216, 117, 173);">
+    <section id="hobbies">
+        <h1 class="t-center my-2 f-2">Hobbies & Interests</h1>
+        <div class="hobbies-container">
+
+            <div class="hobby-item">
+                <p>🖌️ Passionate about <strong>origami and embroidery</strong>, and have conducted workshops for school
+                    students.</p>
+            </div>
+
+            <div class="hobby-item">
+                <p>📚Being a quick learner,I enjoy <strong>reading and exploring new technologies</strong>, always
+                    staying updated with the latest trends in software development.</p>
+            </div>
+
+            <div class="hobby-item">
+                <p>🎶 Relax through <strong>music and creative arts</strong> and learning crocheting now </p>
+            </div>
+
+        </div>
+    </section>
+    <hr style="border: 1px solid rgb(216, 117, 173);">
+    <section id="strengths">
+        <h1 class="t-center my-2 f-2">Strengths & Traits</h1>
+        <div class="strengths-container">
+
+            <div class="strength-item">
+                <p>✔️ Quick Learner – Adapt easily to new technologies and concepts.</p>
+            </div>
+
+            <div class="strength-item">
+                <p>✔️ Able to stay calm under pressure and manage tasks efficiently, allowing me to handle multiple
+                    responsibilities effectively.</p>
+            </div>
+
+            <div class="strength-item">
+                <p>✔️ Leadership – Proven ability through roles like Head Girl, Vice Head Girl, and Discipline Captain.
+                </p>
+            </div>
+
+            <div class="strength-item">
+                <p>✔️ Team Player – Able to collaborate effectively and manage responsibilities</p>
+            </div>
+
+        </div>
+    </section>
+    <hr style="border: 1px solid rgb(216, 117, 173);">
+    <section id="volunteer">
+        <h1 class="t-center my-2 f-2">Volunteer Work</h1>
+        <div class="volunteer-container">
+            <div class="vol-item">
+                <p>🌱 Participated in <strong>tree plantation drives</strong> and <strong>Swachh Bharat Abhiyan</strong>
+                    campaigns as part of SEWA activities.</p>
+            </div>
+            <div class="vol-item">
+                <p>🎓 Conducted <strong>origami,embroidery and art & craft workshops</strong> at schools, engaging
+                    students in creative learning.</p>
+            </div>
+            <div class="vol-item">
+                <p>❤️ Volunteered at <strong>orphanages</strong>, contributing to community development </p>
+            </div>
+        </div>
+    </section>
+
+
+</body>
+
+</html>

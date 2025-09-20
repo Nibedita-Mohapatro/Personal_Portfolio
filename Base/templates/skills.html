@@ -1,0 +1,196 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{%static 'css/aps.css'%}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <title>Skills</title>
+</head>
+
+<body>
+  <nav id="navbar" class="flex s-around bg-color">
+    <div class="left-nav">
+      <h2 class="t-white">Portfolio</h2>
+    </div>
+    <div class="right-nav">
+      <ul class="flex">
+        <li><a href="{%url 'home'%}" class="t-white roboto">Home <i class="fa-solid fa-house"></i></a></li>
+        <li><a href="{% url 'about' %}" class="t-white roboto">About Me <i class="fa-solid fa-user"></i></a>
+        </li>
+        <li><a href="{% url 'skills' %}" class="t-white roboto">Skills <i class="fa-solid fa-code"></i></a></li>
+        <li><a href="{% url 'projects' %}" class="t-white roboto">Projects <i class="fas fa-project-diagram"></i></a>
+        </li>
+        <li><a href="{% url 'home' %}#Contact" class="t-white roboto">Contact <i class="fa-solid fa-rocket"></i></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="skills-section">
+    <h1 class="page-title mr-3" style="color:rgb(216, 117, 173);text-align:center;">My Skills</h1>
+
+        <!-- Programming Languages -->
+        <h2 class=" category-title">Programming Languages</h2>
+      <div class="skills-grid">
+
+        <div class="skill-card">
+          <h3>Java</h3>
+          <p>Learned through academics and projects. Gained strong OOP knowledge and built academic-level projects.</p>
+          <div class="tags">
+            <span class="tag">📂 Projects</span>
+            <span class="tag">✅ Certificate</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <h3>Python</h3>
+          <p>Introduced in academics and self-learning. Planning to use in AI/ML and data analysis.</p>
+          <div class="tags">
+            <span class="tag">✅ Certificate</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <h3>C</h3>
+          <p>Learned during academics, mainly theoretical with basic programs. Strong foundation in logic and concepts.
+          </p>
+          <div class="tags">
+            <span class="tag">🎯 Academic</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <h3>C++</h3>
+          <p>Learnt and applied during academics to build a simple game project (Timber Game,Pong Game).</p>
+          <div class="tags">
+            <span class="tag">📂 Project</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Web Development -->
+      <h2 class="category-title">Web Development</h2>
+      <div class="skills-grid">
+
+        <div class="skill-card">
+          <h3>HTML, CSS, JavaScript, Bootstrap, jQuery</h3>
+          <p>Built 2 academic projects(Skill Sync & Dusky Dine) using these technologies, strengthening my frontend
+            foundation.</p>
+          <div class="tags">
+            <span class="tag">📂 Projects</span>
+            <span class="tag">✅ Certificates</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <h3>Django</h3>
+          <p>Currently used for portfolio and MyBlog project, with a focus on backend integration.</p>
+          <div class="tags">
+            <span class="tag">📚Self Learning</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Database -->
+      <h2 class="category-title">Database</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h3>MySQL</h3>
+          <p>After academics learning I worked with relational databases during projects. Built project for DevifyX .
+          </p>
+          <div class="tags">
+            <span class="tag">📂 Project</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <h3>SQLite</h3>
+          <p>Came to know during internship and used in the HAL SmartMove project. Then applied in Portfolio.</p>
+          <div class="tags">
+            <span class="tag">📂 Project</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tools -->
+      <h2 class="category-title">Platforms,Libraries & Tools</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h3>Platforms</h3>
+          <p> Google Colab,Jupyter</p>
+          <div class="tags">
+            <span class="tag">💻 Platform</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <h3>Libraries & Data Visualization</h3>
+          <p>NumPy,Pandas,Matplotlib,NLP,Power BI</p>
+          <div class="tags">
+            <span class="tag">🎯 Academic</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <h3>Tools</h3>
+          <p>VS Code,Eclipse,Google Docs,Microsoft Word</p>
+          <div class="tags">
+            <span class="tag">⚙️ Tools</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Learning -->
+      <h2 class="category-title">Currently Learning</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h3>React (MERN Stack)</h3>
+          <p>Exploring MERN framework to strengthen full-stack capabilities.</p>
+          <div class="tags">
+            <span class="tag">📚Self Learning</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <h3>Robotics With Arduino</h3>
+          <p>Learning Robotics to make robots under academics </p>
+          <div class="tags">
+            <span class="tag">🎯 Academic</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <h3>Linux</h3>
+          <p>Getting familiar with Linux environment for future DevOps and cloud learning.</p>
+          <div class="tags">
+            <span class="tag">📚Self Learning</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Future Plans -->
+      <h2 class="category-title">Future Learning Plans</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h3>Cloud Computing</h3>
+          <p>Aiming to gain knowledge in cloud platforms for deployment and scalability.</p>
+          <span class="tag">🔮 Planned</span>
+        </div>
+
+        <div class="skill-card">
+          <h3>DevOps</h3>
+          <p>Interested in CI/CD pipelines, automation, and deployment tools.</p>
+          <span class="tag">🔮 Planned</span>
+        </div>
+
+        <div class="skill-card">
+          <h3>AI/ML</h3>
+          <p>Will explore Artificial Intelligence and Machine Learning using Python libraries.</p>
+          <span class="tag">🔮 Planned</span>
+        </div>
+      </div>
+  </section>
+
+</body>
+
+</html>
