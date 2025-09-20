@@ -465,9 +465,6 @@ ul li a:hover {
 
 }
 
-
-
-
 /* ===================== Responsive Design ===================== */
 
 /* For tablets (<= 768px) */
@@ -524,30 +521,51 @@ ul li a:hover {
 
 /* For phones (<= 480px) */
 @media screen and (max-width: 480px) {
-  body {
-    font-size: 14px;
+  /* Stack vertically */
+  .home-left,
+  .home-right {
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
   }
 
-  #navbar {
-    line-height: 3rem;
-    font-size: 14px;
-  }
-
+  /* Fix heading sizes */
   .home-left h1 {
-    font-size: 28px;
+    font-size: 26px;
+    white-space: normal; /* allow wrapping instead of cutting */
   }
 
   .home-left h4 {
-    font-size: 18px;
+    font-size: 16px;
   }
 
-  .projects-item h1,
-  .projects-item p {
-    font-size: 1rem;
+  /* Fix image */
+  .home-right img {
+    position: relative;   /* remove absolute positioning */
+    width: 75%;           /* shrink and center */
+    height: auto;
+    margin: 1rem auto;
+    display: block;
+    border-radius: 50%;   /* keep circular */
+    object-fit: cover;
   }
-
+.about-left img {
+    width: 80%;
+    max-width: 200px;
+    height: auto;
+    margin: 1rem auto;
+    display: block;
+  }
+  /* Buttons smaller */
   .btn {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     padding: 0.5rem 1rem;
+    margin-top: 1rem;
+  }
+
+  /* Projects fit screen */
+  .projects-item {
+    width: 100%;
+    margin: 1rem 0;
   }
 }
