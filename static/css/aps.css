@@ -197,17 +197,17 @@ body {
 }
   
 .about-me {
-    font-family: "Poppins", "Segoe UI", sans-serif; /* casual but professional */
-    font-size: 1.0rem;             /* slightly bigger text */
-    line-height: 1.8;              /* improve readability */
-    color: ivory;                  /* text color */
-    text-align: center;            /* center align text */
-    font-weight: 400;              /* not too bold, casual feel */
-    letter-spacing: 0.5px;         /* improve readability */
+    font-family: "Poppins", "Segoe UI", sans-serif; 
+    font-size: 1.0rem;             
+    line-height: 1.8;             
+    color: ivory;                  
+    text-align: center;            
+    font-weight: 400;              
+    letter-spacing: 0.5px;         
 }
 
 .about-me span {
-    color: #d875ad;                /* highlight key words */
+    color: #d875ad;                
     font-weight: 600;
     font-style: italic;
 }
@@ -216,7 +216,7 @@ body {
 /* Projects Page */
 #projects {
     padding: 2rem 0;
-    text-align: center;  /* keeps main section centered */
+    text-align: center;  
 }
 
 #projects h1 {
@@ -225,13 +225,13 @@ body {
     font-size: 2rem;
 }
 .project-quote {
-    color: ivory;             /* text color */
-    font-size: 1.3rem;        /* slightly bigger than normal text */
-    font-weight: 500;          /* medium weight */
-    text-align: center;        /* center the text */
-    margin: 1rem 0 2rem 0;     /* spacing above and below */
-    line-height: 1.6;          /* improve readability */
-    font-style: italic;        /* optional: make it italic for style */
+    color: ivory;             
+    font-size: 1.3rem;        
+    font-weight: 500;          
+    text-align: center;        
+    margin: 1rem 0 2rem 0;    
+    line-height: 1.6;          
+    font-style: italic;       
 }
 
 #projects h2 {
@@ -243,7 +243,7 @@ body {
 /* Project container */
 .projects-container {
     display: flex;
-    flex-direction: column;   /* stack projects vertically */
+    flex-direction: column;   
     align-items: center;
     gap: 2rem;
     margin: auto;
@@ -255,7 +255,7 @@ body {
     background: #2c2c6c;
     border-radius: 1rem;
     padding: 1.5rem 2rem;
-    width: 100%;              /* full width */
+    width: 100%;              
     text-align: left;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -307,9 +307,9 @@ body {
 .category-title {
   margin: 30px 0 15px;
   font-size: 1.6rem;
-  color: rgb(216, 117, 173); /* pink */
+  color: rgb(216, 117, 173); 
   text-align: left;
-  border-bottom: 2px solid rgb(216, 117, 173); /* pink underline */
+  border-bottom: 2px solid rgb(216, 117, 173);
   padding-bottom: 5px;
 }
 
@@ -323,7 +323,7 @@ body {
 
 /* Each skill card */
 .skill-card {
-  background: #2c2c6c; /* same as project cards */
+  background: #2c2c6c; 
   padding: 20px;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.4);
@@ -333,7 +333,7 @@ body {
 
 .skill-card:hover {
   transform: translateY(-5px);
-  background: #35357a; /* slightly lighter hover */
+  background: #35357a; 
 }
 
 .skill-card h3 {
@@ -367,10 +367,10 @@ body {
 .btn {
     margin-left: 0 .5rem;
     font-size: 1rem;
-    color: #8a566a;                       /* dark text on ivory background */
+    color: #8a566a;                       
     cursor: pointer;
     padding: 0.75rem 1.2rem;
-    border: 1px solid ivory;           /* ivory border */
+    border: 1px solid ivory;          
     border-radius: 0.4rem;
     background: ivory;                 /* ivory background */
     font-family: 'Poppins', sans-serif;
